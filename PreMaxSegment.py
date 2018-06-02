@@ -8,7 +8,7 @@ Created on Sat Jun  2 15:22:40 2018
 """
 
 def PreMaxSeg1(sen,dicts,span):
-    '''前向最大匹配算法'''
+    '''前向最大匹配算法1'''
     idx = 0
     while idx<len(sen):
         matched=False
@@ -25,6 +25,7 @@ def PreMaxSeg1(sen,dicts,span):
         idx += i
 
 def PreMaxSeg2(sen,dicts,span):
+    '''前向最大匹配分词2'''
     cur,tail = 0,span
     while (cur < tail and cur<len(sen)):
         if len(sen)<span:
